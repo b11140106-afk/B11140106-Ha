@@ -43,6 +43,19 @@
     <style>
         body {
             font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(ellipse at 12% 8%, rgba(99, 102, 241, 0.12), transparent 38%),
+                radial-gradient(ellipse at 88% 35%, rgba(14, 165, 233, 0.10), transparent 34%),
+                linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+            background-attachment: fixed;
+        }
+        .dark body {
+            background-color: #020617;
+            background-image:
+                radial-gradient(ellipse at 12% 8%, rgba(99, 102, 241, 0.16), transparent 38%),
+                radial-gradient(ellipse at 88% 35%, rgba(14, 165, 233, 0.12), transparent 34%),
+                linear-gradient(180deg, #020617 0%, #0f172a 100%);
         }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
@@ -89,7 +102,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-brand-500 selection:text-white">
+<body class="text-slate-800 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-brand-500 selection:text-white">
 
     <!-- Navigation Bar -->
     <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass border-b border-slate-200/60 dark:border-slate-800/60">
